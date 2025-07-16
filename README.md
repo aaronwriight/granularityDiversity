@@ -17,6 +17,7 @@ Data were obtained from the associated [GitHub repository](https://github.com/ka
  * [.Rproj](./emotionality_granularity_replication.Rproj)
 
 ### Project structure (TEMPLATE BORROWED FROM OTHER REPO)
+```{text}
 granularityDiveristy
   ├── scripts/
   │   ├── matlab_batch.m
@@ -30,6 +31,7 @@ granularityDiveristy
   │   └── anat/<subj>/T1.nii.gz
   ├── fs_output/  # Freesurfer recon-all output (SUBJECTS_DIR)
   └── surface_output/<subj>/lh.spmT.mgh, screenshot.png, etc.
+```
 
 ## Analyzing data and generating plots
 pending
