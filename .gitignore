@@ -57,6 +57,9 @@ renv/library/
 # OSF files
 /osf/
 
+# stylistics
+/styles/
+
 # authors' .gitignore
 *.DS_Store
 *.ipynb_checkpoints

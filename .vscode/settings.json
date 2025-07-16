@@ -1,0 +1,8 @@
+{
+    "workbench.editorAssociations": {
+        "*.qmd": "default",
+        "*.md": "default",
+        "*.markdown": "default"
+    },
+    "MATLAB.installPath": "'/Applications/MATLAB_R2024b.app'"
+}

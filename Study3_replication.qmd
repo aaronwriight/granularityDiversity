@@ -1,0 +1,45 @@
+---
+title: "Emotional Granularity Replication - Study 1"
+author: "Aaron Wright [`aawva@mit.edu`]"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: default
+  pdf_document: default
+execute:
+  eval: false
+format:
+  html:
+    css: styles/quarto_styles.css
+  pdf:
+    template: styles/quarto_styles.tex
+---
+
+<!-- METADATA -->
+
+## Overview
+
+This .qmd is a scratchpad for replicating the Hoemann 2023 analyses.
+
+<!-- SCRIPT -->
+
+# Study 1 Replication
+
+## Environment
+
+```{text, dependencies}
+# install packages
+renv::install("tidyverse")
+renv::install("here")
+
+# pdate renv
+renv::snapshot()
+```
+
+```{r, environment}
+library(tidyverse)
+library(here)
+```
+
+## Granularity_affect measures.m
+
+granularity_affect measures.m = uses rating data to calculate granularity and mean affect for negative and positive emotions; run separately for each dataSet

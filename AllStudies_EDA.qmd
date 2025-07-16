@@ -1,0 +1,71 @@
+---
+title: "Emotional Granularity - All Studies EDA"
+author: "Aaron Wright [`aawva@mit.edu`]"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: default
+  pdf_document: default
+execute:
+  eval: false
+format:
+  html:
+    css: styles/quarto_styles.css
+  pdf:
+    template: styles/quarto_styles.tex
+---
+
+<!-- METADATA -->
+
+## Overview
+
+This .qmd is a scratchpad for replicating the Hoemann 2023 analyses. Each study is housed in a separate .qmd. This file is intended to provide a general environment for inspecting data, recording notes, and describing high-level steps taken in the replication process.
+
+<!-- SCRIPT -->
+
+# Exploratory Data Analysis
+
+## Environment
+
+```{text, dependencies}
+# install packages
+renv::install("tidyverse")
+renv::install("here")
+
+# update renv
+renv::snapshot()
+```
+
+```{r, environment}
+library(tidyverse)
+library(here)
+library(readxl)
+```
+
+## Data
+
+This is a study-general survey of the available data.
+
+EDM :
+
+ESM : 
+```{r}
+# study 1 -
+s1_EOD_ratings_by_valence <- read_excel(here("Data", "dataSet1_EOD_rating data_by valence.xlsx"))
+s1_EOD_ratings <- read_excel(here("Data", "dataSet1_EOD_rating data.xlsx"))
+s1_words <- read_csv(here("Data", "dataSet1_words.csv"))
+
+# study 2 -
+s2_ESM_ratings <- read_excel(here("Data", "dataSet2_ESM_rating data.xlsx"))
+s2_words <- read_csv(here("Data", "dataSet2_words.csv"))
+
+# study 3 -
+s3_ESM_ratings <- read_excel(here("Data", "dataSet3_ESM_rating data.xlsx"))
+s3_words <- read_csv(here("Data", "dataSet3_words.csv"))
+```
+
+Meta-analytic results
+
+```{r}
+meta_positive <- read_csv(here("Data", "meta-analysis_pos.csv"))
+meta_negative <- read_csv(here("Data", "meta-analysis_neg.csv"))
+```
