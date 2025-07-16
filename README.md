@@ -16,6 +16,7 @@ Data were obtained from the associated [GitHub repository](https://github.com/ka
  * [README.md](./README.md)
  * [.Rproj](./emotionality_granularity_replication.Rproj)
 
+<!--
 ### Project structure (TEMPLATE BORROWED FROM OTHER REPO)
 ```{text}
 granularityDiveristy
@@ -32,6 +33,7 @@ granularityDiveristy
   ├── fs_output/  # Freesurfer recon-all output (SUBJECTS_DIR)
   └── surface_output/<subj>/lh.spmT.mgh, screenshot.png, etc.
 ```
+-->
 
 ## Analyzing data and generating plots
 pending
